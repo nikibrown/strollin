@@ -1,0 +1,3 @@
+# Starter Project
+
+- `npm install`
