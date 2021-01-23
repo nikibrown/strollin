@@ -1,3 +1,4 @@
 # Starter Project
 
-- `npm install`
+- `npm install` to install dependencies
+- `gulp` to run site
