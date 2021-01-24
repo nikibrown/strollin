@@ -6,7 +6,7 @@ const fileinclude = require("gulp-file-include");
 
 browserSync.init({
 	server: {
-		baseDir: "./build",
+		baseDir: "./docs",
 		index: "/index.html",
 	},
 });
@@ -16,19 +16,19 @@ function style() {
 		.src("./src/assets/scss/*.scss")
 		.pipe(sass())
 		.on("error", sass.logError)
-		.pipe(gulp.dest("./build/assets/css"));
+		.pipe(gulp.dest("./docs/assets/css"));
 }
 
 function moveimg() {
 	return gulp
 		.src(["./src/assets/img/*"])
-		.pipe(gulp.dest("./build/assets/img"));
+		.pipe(gulp.dest("./docs/assets/img"));
 }
 
 function movejs() {
 	return gulp
 		.src(["./src/assets/js/*"])
-		.pipe(gulp.dest("./build/assets/js"));
+		.pipe(gulp.dest("./docs/assets/js"));
 }
 
 function include() {
@@ -40,7 +40,7 @@ function include() {
 				basepath: "@file",
 			})
 		)
-		.pipe(gulp.dest("./build"));
+		.pipe(gulp.dest("./docs"));
 }
 
 exports.default = function () {
