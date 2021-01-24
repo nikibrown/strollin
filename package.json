@@ -1,5 +1,5 @@
 {
-	"name": "Starter Project",
+	"name": "Strollin",
 	"version": "1.0.0",
 	"description": "Starter Project site",
 	"main": "index.html",
@@ -8,14 +8,14 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/nikibrown/XYZ.git"
+		"url": "git+https://github.com/nikibrown/strollin.git"
 	},
 	"author": "",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/nikibrown/XYZ/issues"
+		"url": "https://github.com/nikibrown/strollin/issues"
 	},
-	"homepage": "https://github.com/nikibrown/XYZ",
+	"homepage": "https://github.com/nikibrown/strollin",
 	"devDependencies": {
 		"bootstrap": "^4.6.0",
 		"browser-sync": "^2.26.13",
