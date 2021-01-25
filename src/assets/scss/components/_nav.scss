@@ -1,4 +1,19 @@
 .navbar {
-	
+    text-transform: uppercase;
 }
 
+.nav-item {
+    .nav-link {
+        position: relative;
+        &:after {
+            background-color: $blue;
+            content: '';
+            height: 15px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1px;
+        }
+    }
+}

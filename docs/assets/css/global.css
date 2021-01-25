@@ -7044,7 +7044,7 @@ button.bg-dark:focus {
 .font-italic {
   font-style: italic !important; }
 
-.text-white {
+.text-white, .section--dark-blue {
   color: #fff !important; }
 
 .text-primary {
@@ -7202,28 +7202,20 @@ body {
   font-size: 16px;
   line-height: 1.5; }
 
-.btn {
-  border: none;
-  border-radius: 25px;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding: 15px 75px 15px 25px;
-  position: relative; }
-  .btn .fas {
-    position: absolute;
-    right: 25px;
-    top: 50%;
-    transform: translateY(-50%); }
-  .btn.btn-primary {
-    background-color: #ED5791; }
-    .btn.btn-primary:hover {
-      background-color: #eb4082; }
-  .btn.btn-secondary {
-    background-color: #5B0047; }
-    .btn.btn-secondary:hover {
-      background-color: #420033; }
+.navbar {
+  text-transform: uppercase; }
 
-body {
-  background: salmon !important;
-  padding: 40px; }
+.nav-item .nav-link {
+  position: relative; }
+  .nav-item .nav-link:after {
+    background-color: #007bff;
+    content: '';
+    height: 15px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px; }
+
+.section--dark-blue {
+  background-color: blue; }
