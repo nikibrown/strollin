@@ -1,5 +1,5 @@
 footer {
-    
+    @extend .section--dark-blue;
+    @extend .section--padding-sm;
+    @extend .text-white;
 }
-
-

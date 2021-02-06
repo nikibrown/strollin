@@ -2,7 +2,26 @@
     @@include('inc/head.html')
     <body>
         @@include('inc/header.html')
-        <main>@@include('inc/section--dark-blue.html')</main>
+        <main>
+            @@include('inc/section--full.html') @@include('inc/section--photo-banner.html')
+            @@include('inc/section--three-col.html') @@include('inc/section--two-col.html')
+
+            <section class="section--purple section--padding-sm text-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h2>Headline</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+                                atque? Impedit aut, saepe quos cum quasi in laborum. Quas quisquam
+                                adipisci cum ad excepturi distinctio repellat, ut labore culpa
+                                deleniti?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
         @@include('inc/footer.html')
     </body>
 </html>

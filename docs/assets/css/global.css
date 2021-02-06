@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -3505,7 +3504,7 @@ input[type="button"].btn-block {
     float: left;
     padding-right: 0.5rem;
     color: #6c757d;
-    content: "»"; }
+    content: "/"; }
 
 .breadcrumb-item + .breadcrumb-item:hover::before {
   text-decoration: underline; }
@@ -7044,7 +7043,7 @@ button.bg-dark:focus {
 .font-italic {
   font-style: italic !important; }
 
-.text-white, .section--dark-blue {
+.text-white, footer, .section--dark-blue, .section--blue {
   color: #fff !important; }
 
 .text-primary {
@@ -7188,6 +7187,27 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+.section--padding-sm, footer, .section--dark-blue, .section--blue, .section--two-col {
+  padding: 20px 0; }
+
+.section--padding-md {
+  padding: 40px 0; }
+
+.section--padding-lg {
+  padding: 60px 0; }
+
+footer, .section--dark-blue {
+  background-color: #25255e; }
+
+.section--blue {
+  background-color: #1e71b4; }
+
+.section--purple {
+  background-color: #89338a; }
+
+.section--white, .sextion--white {
+  background-color: #fff; }
+
 @media (min-width: 1200px) {
   .container,
   .container-sm,
@@ -7217,5 +7237,7 @@ body {
     transform: translateY(-50%);
     width: 1px; }
 
-.section--dark-blue {
-  background-color: blue; }
+.section--photo-banner {
+  background-size: cover;
+  background-position: top center;
+  min-height: 400px; }

@@ -1,0 +1,25 @@
+.section--dark-blue {
+    @extend .section--dark-blue;
+    @extend .section--padding-sm;
+    @extend .text-white;
+}
+
+.section--blue {
+    @extend .section--blue;
+    @extend .section--padding-sm;
+    @extend .text-white;
+}
+
+.section--two-col {
+    @extend .section--padding-sm;
+}
+
+.sextion--white {
+    @extend .section--white;
+}
+
+.section--photo-banner {
+    background-size: cover;
+    background-position: top center;
+    min-height: 400px;
+}

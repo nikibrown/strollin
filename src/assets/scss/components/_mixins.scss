@@ -1,0 +1,29 @@
+// Sections
+
+.section--padding-sm {
+    padding: $base-spacing-unit 0; // 20px
+}
+
+.section--padding-md {
+    padding: $base-spacing-unit * 2 0; // 40px
+}
+
+.section--padding-lg {
+    padding: $base-spacing-unit * 3 0; // 60px
+}
+
+.section--dark-blue {
+    background-color: $brand-dark-blue;
+}
+
+.section--blue {
+    background-color: $brand-blue;
+}
+
+.section--purple {
+    background-color: $brand-purple;
+}
+
+.section--white {
+    background-color: $white;
+}
