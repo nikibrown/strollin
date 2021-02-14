@@ -7196,6 +7196,9 @@ a.text-dark:hover, a.text-dark:focus {
 .section--padding-lg {
   padding: 60px 0; }
 
+.section--padding-xl {
+  padding: 80px 0; }
+
 footer, .section--dark-blue {
   background-color: #25255e; }
 
@@ -7247,9 +7250,12 @@ h1,
 h2,
 h3,
 .lead,
-p,
+p {
+  line-height: 1.5;
+  margin-bottom: 1.25rem; }
+
 li {
-  line-height: 1.5; }
+  margin-bottom: 0.5rem; }
 
 h1, .h1 {
   font-size: 2.5rem;
@@ -7277,9 +7283,9 @@ p {
 .navbar {
   text-transform: uppercase; }
 
-.nav-item .nav-link {
+.navbar-nav li .nav-link {
   position: relative; }
-  .nav-item .nav-link:after {
+  .navbar-nav li .nav-link:after {
     background-color: #007bff;
     content: '';
     height: 15px;
@@ -7288,6 +7294,9 @@ p {
     top: 50%;
     transform: translateY(-50%);
     width: 1px; }
+
+.navbar-nav li:nth-last-child(2) .nav-link:after {
+  display: none; }
 
 .section--photo-banner {
   background-size: cover;

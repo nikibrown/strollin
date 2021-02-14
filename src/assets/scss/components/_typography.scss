@@ -42,9 +42,13 @@ h1,
 h2,
 h3,
 .lead,
-p,
-li {
+p {
     line-height: $line-height-base;
+    margin-bottom: 1.25rem; // 20px/16px
+}
+
+li {
+    margin-bottom: 0.5rem; // 8px/16px
 }
 
 h1,
