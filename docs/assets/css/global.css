@@ -7219,8 +7219,60 @@ footer, .section--dark-blue {
 html,
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 16px; }
+
+pre {
+  font-family: Andale Mono;
+  background-color: #000;
+  border-radius: 6px;
+  color: #fff;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 10px; }
+
+.styleguide-group {
+  border-bottom: 1px solid #999;
+  margin: 40px 0; }
+  .styleguide-group:last-child {
+    border-bottom: none; }
+
+.styleguide-image {
+  border: 1px solid #999;
+  border-radius: 6px;
+  display: block;
+  max-width: 300px;
+  margin-bottom: 20px; }
+
+h1,
+h2,
+h3,
+.lead,
+p,
+li {
   line-height: 1.5; }
+
+h1, .h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+h2, .h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+h3, .h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 400; }
+
+p {
+  font-size: 1rem;
+  font-weight: 400; }
 
 .navbar {
   text-transform: uppercase; }
