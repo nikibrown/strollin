@@ -31,3 +31,12 @@
 //         }
 //     }
 // }
+
+.btn-primary {
+    background-color: $brand-orange;
+    border-color: $brand-orange;
+    &:hover {
+        background-color: darken($brand-orange, 10%);
+        border-color: darken($brand-orange, 10%);
+    }
+}

@@ -7187,7 +7187,7 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-.section--padding-sm, footer, .section--dark-blue, .section--blue, .section--two-col {
+.section--padding-sm, header, footer, .section--dark-blue, .section--blue, .section--two-col {
   padding: 20px 0; }
 
 .section--padding-md {
@@ -7200,10 +7200,10 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 80px 0; }
 
 footer, .section--dark-blue {
-  background-color: #25255e; }
+  background-color: #001c71; }
 
 .section--blue {
-  background-color: #1e71b4; }
+  background-color: #0071ce; }
 
 .section--purple {
   background-color: #89338a; }
@@ -7281,22 +7281,46 @@ p {
   font-weight: 400; }
 
 .navbar {
+  padding: 0;
   text-transform: uppercase; }
 
-.navbar-nav li .nav-link {
-  position: relative; }
-  .navbar-nav li .nav-link:after {
-    background-color: #007bff;
-    content: '';
-    height: 15px;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 1px; }
+.navbar-brand {
+  padding: 0; }
 
-.navbar-nav li:nth-last-child(2) .nav-link:after {
-  display: none; }
+.navbar-toggler p {
+  margin-bottom: 0; }
+
+@media (min-width: 1200px) {
+  .navbar-toggler {
+    display: none; } }
+
+@media (min-width: 1200px) {
+  .navbar-expand-xl .navbar-nav li .nav-link {
+    color: #001c71;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    position: relative; }
+    .navbar-expand-xl .navbar-nav li .nav-link:hover {
+      color: #0071ce;
+      text-decoration: underline; }
+    .navbar-expand-xl .navbar-nav li .nav-link:after {
+      background-color: #007bff;
+      content: '';
+      height: 16px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1px; }
+  .navbar-expand-xl .navbar-nav li:nth-last-child(2) .nav-link:after {
+    display: none; } }
+
+.btn-primary {
+  background-color: #f37f4c;
+  border-color: #f37f4c; }
+  .btn-primary:hover {
+    background-color: #f05d1c;
+    border-color: #f05d1c; }
 
 .section--photo-banner {
   background-size: cover;
