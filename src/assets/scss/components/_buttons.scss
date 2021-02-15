@@ -1,42 +1,22 @@
-// .btn {
-//     border: none;
-//     border-radius: 25px;
-//     font-size: 16px;
-//     font-weight: 700;
-//     text-transform: uppercase;
-//     padding: 15px 75px 15px 25px;
-//     position: relative;
-
-//     .fas {
-//         position: absolute;
-//         right: 25px;
-//         top: 50%;
-//         transform: translateY(-50%);
-//     }
-
-//     &.btn-primary {
-
-//         background-color: $brand-pink;
-
-//         &:hover {
-//             background-color: darken($brand-pink, 5%);
-//         }
-
-//     }
-
-//     &.btn-secondary {
-//         background-color: $brand-purple;
-//         &:hover {
-//             background-color: darken($brand-purple, 5%);
-//         }
-//     }
-// }
+.btn {
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    outline: none;
+}
 
 .btn-primary {
     background-color: $brand-orange;
     border-color: $brand-orange;
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited,
+    &.focus,
+    &:not(:disabled):not(.disabled):active {
         background-color: darken($brand-orange, 10%);
-        border-color: darken($brand-orange, 10%);
+        border: none;
+        box-shadow: none !important;
+        outline: none;
     }
 }

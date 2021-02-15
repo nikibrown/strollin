@@ -1,21 +1,5 @@
 // Sections
 
-.section--padding-sm {
-    padding: $base-spacing-unit 0; // 20px
-}
-
-.section--padding-md {
-    padding: $base-spacing-unit * 2 0; // 40px
-}
-
-.section--padding-lg {
-    padding: $base-spacing-unit * 3 0; // 60px
-}
-
-.section--padding-xl {
-    padding: $base-spacing-unit * 4 0; // 80px
-}
-
 .section--dark-blue {
     background-color: $brand-dark-blue;
 }
@@ -31,3 +15,44 @@
 .section--white {
     background-color: $white;
 }
+
+@mixin addBorders($border-color) {
+    @include media-breakpoint-up(lg) {
+        div[class*=' col'],
+        div[class^='col'] {
+            border-left: 1px solid $border-color;
+            &:first-child {
+                border-left: none;
+            }
+        }
+    }
+}
+
+@mixin sectionSpacing($spacing) {
+    padding: $spacing 0;
+}
+
+$spacing-sm: $base-spacing-unit; // 20px
+$spacing-md: $base-spacing-unit * 2; // 40px
+$spacing-lg: $base-spacing-unit * 3; // 60px
+$spacing-xl: $base-spacing-unit * 4; // 80px
+
+@mixin sectionColor($color) {
+    background-color: $color;
+}
+
+// .section--padding-sm {
+//     padding: $base-spacing-unit 0; // 20px
+// }
+
+// .section--padding-md {
+//     padding: $base-spacing-unit * 2 0; // 40px
+// }
+
+// .section--padding-lg {
+//     padding: $base-spacing-unit * 3 0; // 60px
+// }
+
+// .section--padding-xl {
+//     padding: $base-spacing-unit * 4 0; // 80px
+// }

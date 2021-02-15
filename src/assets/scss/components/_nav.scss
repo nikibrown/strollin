@@ -1,10 +1,15 @@
 .navbar {
     padding: 0;
     text-transform: uppercase;
+    @extend .align-items-start;
 }
 
 .navbar-brand {
     padding: 0;
+    img {
+        height: auto;
+        max-width: 210px;
+    }
 }
 
 .navbar-toggler {
@@ -16,9 +21,17 @@
         display: none;
     }
 }
+
+// spacing and li dividers for nav
 .navbar-expand-xl {
     .navbar-nav {
+        margin-top: $base-spacing-unit;
         @include media-breakpoint-up(xl) {
+            margin-top: 0;
+            .btn {
+                margin-left: 20px;
+            }
+
             li {
                 .nav-link {
                     color: $brand-dark-blue;

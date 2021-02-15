@@ -1,5 +1,15 @@
 footer {
-    @extend .section--dark-blue;
-    @extend .section--padding-sm;
+    @include sectionColor($brand-dark-blue);
+    @include sectionSpacing($spacing-sm);
     @extend .text-white;
+    @include addBorders($brand-med-blue);
+
+    img {
+        height: auto;
+        max-width: 180px;
+    }
+
+    .row {
+        @extend .align-items-center;
+    }
 }

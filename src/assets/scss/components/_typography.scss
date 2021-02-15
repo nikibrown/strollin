@@ -4,9 +4,11 @@ $opensans: 'Open Sans', sans-serif;
 $font-family-base: $opensans;
 $font-size-base: 16px;
 $line-height-base: 1.5;
+$base-type-color: #262262;
 
 html,
 body {
+    color: $base-type-color;
     font-family: $font-family-base;
     font-size: $font-size-base;
 }
