@@ -2,10 +2,7 @@
     padding: 0;
     text-transform: uppercase;
     @extend .align-items-start;
-}
 
-.navbar-brand {
-    padding: 0;
     img {
         height: auto;
         max-width: 210px;
