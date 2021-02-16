@@ -31,7 +31,8 @@
 
 .section--half-half-extend {
     background: $white;
-    @include sectionSpacing($spacing-md);
+    padding: $base-spacing-unit * 2 0 0 0;
+
     @include media-breakpoint-up(lg) {
         background: linear-gradient(
             90deg,
@@ -40,6 +41,7 @@
             $brand-purple 50%,
             $brand-purple 100%
         );
+        @include sectionSpacing($spacing-md);
     }
 
     div[class*=' col'],
@@ -56,6 +58,11 @@
                 background-color: $brand-purple;
             }
         }
+    }
+
+    .mobile-content {
+        background-color: $brand-purple;
+        padding: $base-spacing-unit 0;
     }
 }
 

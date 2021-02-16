@@ -1,8 +1,8 @@
 footer {
+    @include addBorders($brand-med-blue);
     @include sectionColor($brand-dark-blue);
     @include sectionSpacing($spacing-sm);
     @extend .text-white;
-    @include addBorders($brand-med-blue);
 
     img {
         height: auto;
@@ -10,6 +10,20 @@ footer {
     }
 
     .row {
-        @extend .align-items-center;
+        @extend .align-items-start;
+    }
+
+    a {
+        color: $white;
+        &:hover {
+            color: rgba(255, 255, 255, 0.8);
+            img {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .fab {
+        font-size: 2.5rem;
     }
 }
