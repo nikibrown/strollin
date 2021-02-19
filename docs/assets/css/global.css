@@ -7043,7 +7043,7 @@ button.bg-dark:focus {
 .font-italic {
   font-style: italic !important; }
 
-.text-white, footer, .section--dark-blue, .section--blue, .section--half-half-extend div[class*=' col']:last-child,
+.text-white, footer, .section--dark-blue, .section--blue, .section--purple, .section--half-half-extend div[class*=' col']:last-child,
 .section--half-half-extend div[class^='col']:last-child, .section--homepage-three-col {
   color: #fff !important; }
 
@@ -7206,7 +7206,7 @@ a.text-dark:hover, a.text-dark:focus {
   .container-md,
   .container-lg,
   .container-xl {
-    max-width: 1180px !important; } }
+    max-width: 1290px !important; } }
 
 html,
 body {
@@ -7377,6 +7377,32 @@ footer {
   background-color: #0071ce;
   padding: 1.25rem 0; }
 
+.section--purple {
+  background-color: #89338a;
+  padding: 2.5rem 0; }
+  .section--purple div[class*=' col'],
+  .section--purple div[class^='col'] {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1.25rem;
+    padding-top: 1.25rem; }
+    .section--purple div[class*=' col']:last-child,
+    .section--purple div[class^='col']:last-child {
+      border-bottom: none;
+      padding-bottom: 0; }
+    .section--purple div[class*=' col']:first-child,
+    .section--purple div[class^='col']:first-child {
+      padding-top: 0px; }
+  @media (min-width: 992px) {
+    .section--purple div[class*=' col'],
+    .section--purple div[class^='col'] {
+      border-bottom: none;
+      border-left: 1px solid #fff;
+      padding-bottom: 0;
+      padding-top: 0; }
+      .section--purple div[class*=' col']:first-child,
+      .section--purple div[class^='col']:first-child {
+        border-left: none; } }
+
 .section--two-col {
   padding: 1.25rem 0; }
 
@@ -7403,6 +7429,11 @@ footer {
     .section--three-col div[class*=' col']:first-child,
     .section--three-col div[class^='col']:first-child {
       border-left: none; } }
+
+.section--photo-gallery {
+  padding: 2.5rem 0; }
+  .section--photo-gallery a:hover img {
+    opacity: 0.9; }
 
 .section--photo-banner {
   background-size: cover;

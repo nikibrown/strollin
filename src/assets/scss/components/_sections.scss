@@ -11,6 +11,13 @@
     @extend .text-white;
 }
 
+.section--purple {
+    @include addBorders($white);
+    @include sectionColor($brand-purple);
+    @include sectionSpacing($spacing-md);
+    @extend .text-white;
+}
+
 .section--two-col {
     @include sectionSpacing($spacing-sm);
 }
@@ -21,6 +28,18 @@
 
 .section--white {
     @extend .section--white;
+}
+
+.section--photo-gallery {
+    @include sectionSpacing($spacing-md);
+
+    a {
+        &:hover {
+            img {
+                opacity: 0.9;
+            }
+        }
+    }
 }
 
 .section--photo-banner {
