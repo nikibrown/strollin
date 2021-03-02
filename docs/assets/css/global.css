@@ -5088,7 +5088,7 @@ button.bg-dark:focus {
 .justify-content-around {
   justify-content: space-around !important; }
 
-.align-items-start, .navbar, footer .row {
+.align-items-start, .navbar {
   align-items: flex-start !important; }
 
 .align-items-end {
@@ -7319,8 +7319,7 @@ img.float-left {
 
 footer {
   background-color: #001c71;
-  padding: 1.25rem 0;
-  min-height: 230px; }
+  padding: 1.25rem 0; }
   footer div[class*=' col'],
   footer div[class^='col'] {
     border-bottom: 1px solid #2b3990;
