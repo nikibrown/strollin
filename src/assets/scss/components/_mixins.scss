@@ -73,3 +73,7 @@ $spacing-xl: $base-spacing-unit * 4; // 80px
 // .section--padding-xl {
 //     padding: $base-spacing-unit * 4 0; // 80px
 // }
+
+.resource {
+    border-bottom: 1px solid $brand-blue;
+}

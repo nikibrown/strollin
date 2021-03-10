@@ -1,13 +1,12 @@
 .section--dark-blue {
     @include sectionColor($brand-dark-blue);
+    @include sectionSpacing($spacing-md);
     @extend .text-white;
-    @include sectionSpacing($spacing-sm);
 }
 
 .section--blue {
-    @extend .section--blue;
     @include sectionColor($brand-blue);
-    @include sectionSpacing($spacing-sm);
+    @include sectionSpacing($spacing-md);
     @extend .text-white;
 }
 
@@ -28,6 +27,7 @@
 
 .section--white {
     @extend .section--white;
+    @include sectionSpacing($spacing-md);
 }
 
 .section--photo-gallery {
@@ -42,10 +42,22 @@
     }
 }
 
-.section--photo-banner {
+.section--photo-banner-large {
     background-size: cover;
     background-position: top center;
     min-height: 430px;
+    @include media-breakpoint-up(xl) {
+        height: 500px;
+    }
+}
+
+.section--photo-banner-small {
+    background-size: cover;
+    background-position: top center;
+    min-height: 300px;
+    @include media-breakpoint-up(xl) {
+        height: 400px;
+    }
 }
 
 .section--half-half-extend {
@@ -97,6 +109,14 @@
     @extend .text-white;
 }
 
+.add-borders-white {
+    @include addBorders($white);
+}
+
+.add-borders-dark-blue {
+    @include addBorders($brand-dark-blue);
+}
+
 .section--photo-bleed-right {
     width: 100%;
     @extend .d-flex;
@@ -129,5 +149,14 @@
         @include media-breakpoint-up(lg) {
             width: 50%;
         }
+
+        @include media-breakpoint-up(xl) {
+            height: 500px;
+        }
     }
+}
+
+.resource {
+    @include sectionSpacing($spacing-sm);
+    border-bottom: 1px solid $brand-blue;
 }

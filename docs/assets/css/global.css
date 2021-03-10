@@ -7200,6 +7200,9 @@ a.text-dark:hover, a.text-dark:focus {
 .section--white {
   background-color: #fff; }
 
+.resource {
+  border-bottom: 1px solid #0071ce; }
+
 @media (min-width: 1200px) {
   .container,
   .container-sm,
@@ -7354,7 +7357,7 @@ footer {
   footer .fab {
     font-size: 2.5rem; }
   footer .fas {
-    margin: 7px 10px 0 0; }
+    margin: 6px 10px 0 0; }
 
 .btn {
   border: none;
@@ -7365,19 +7368,37 @@ footer {
 .btn-primary {
   background-color: #f37f4c;
   border: none; }
-  .btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-primary:visited, .btn-primary.focus, .btn-primary:not(:disabled):not(.disabled):active {
+  .btn-primary:hover, .btn-primary:focus, .btn-primary.focus {
     background-color: #f05d1c;
+    border: none;
+    box-shadow: none !important;
+    outline: none; }
+
+.btn-secondary {
+  background-color: #0071ce;
+  border: none; }
+  .btn-secondary:hover, .btn-secondary:focus, .btn-secondary.focus {
+    background-color: #0063b5;
+    border: none;
+    box-shadow: none !important;
+    outline: none; }
+
+.btn-dark {
+  background-color: #001c71;
+  border: none; }
+  .btn-dark:hover, .btn-dark:focus, .btn-dark.focus {
+    background-color: #001658;
     border: none;
     box-shadow: none !important;
     outline: none; }
 
 .section--dark-blue {
   background-color: #001c71;
-  padding: 1.25rem 0; }
+  padding: 2.5rem 0; }
 
 .section--blue {
   background-color: #0071ce;
-  padding: 1.25rem 0; }
+  padding: 2.5rem 0; }
 
 .section--purple {
   background-color: #89338a;
@@ -7432,15 +7453,29 @@ footer {
     .section--three-col div[class^='col']:first-child {
       border-left: none; } }
 
+.section--white {
+  padding: 2.5rem 0; }
+
 .section--photo-gallery {
   padding: 2.5rem 0; }
   .section--photo-gallery a:hover img {
     opacity: 0.9; }
 
-.section--photo-banner {
+.section--photo-banner-large {
   background-size: cover;
   background-position: top center;
   min-height: 430px; }
+  @media (min-width: 1200px) {
+    .section--photo-banner-large {
+      height: 500px; } }
+
+.section--photo-banner-small {
+  background-size: cover;
+  background-position: top center;
+  min-height: 300px; }
+  @media (min-width: 1200px) {
+    .section--photo-banner-small {
+      height: 400px; } }
 
 .section--half-half-extend {
   background: #fff;
@@ -7508,6 +7543,54 @@ footer {
       .section--homepage-three-col div[class^='col']:first-child {
         border-left: none; } }
 
+.add-borders-white div[class*=' col'],
+.add-borders-white div[class^='col'] {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 1.25rem;
+  padding-top: 1.25rem; }
+  .add-borders-white div[class*=' col']:last-child,
+  .add-borders-white div[class^='col']:last-child {
+    border-bottom: none;
+    padding-bottom: 0; }
+  .add-borders-white div[class*=' col']:first-child,
+  .add-borders-white div[class^='col']:first-child {
+    padding-top: 0px; }
+
+@media (min-width: 992px) {
+  .add-borders-white div[class*=' col'],
+  .add-borders-white div[class^='col'] {
+    border-bottom: none;
+    border-left: 1px solid #fff;
+    padding-bottom: 0;
+    padding-top: 0; }
+    .add-borders-white div[class*=' col']:first-child,
+    .add-borders-white div[class^='col']:first-child {
+      border-left: none; } }
+
+.add-borders-dark-blue div[class*=' col'],
+.add-borders-dark-blue div[class^='col'] {
+  border-bottom: 1px solid #001c71;
+  padding-bottom: 1.25rem;
+  padding-top: 1.25rem; }
+  .add-borders-dark-blue div[class*=' col']:last-child,
+  .add-borders-dark-blue div[class^='col']:last-child {
+    border-bottom: none;
+    padding-bottom: 0; }
+  .add-borders-dark-blue div[class*=' col']:first-child,
+  .add-borders-dark-blue div[class^='col']:first-child {
+    padding-top: 0px; }
+
+@media (min-width: 992px) {
+  .add-borders-dark-blue div[class*=' col'],
+  .add-borders-dark-blue div[class^='col'] {
+    border-bottom: none;
+    border-left: 1px solid #001c71;
+    padding-bottom: 0;
+    padding-top: 0; }
+    .add-borders-dark-blue div[class*=' col']:first-child,
+    .add-borders-dark-blue div[class^='col']:first-child {
+      border-left: none; } }
+
 .section--photo-bleed-right {
   width: 100%; }
   .section--photo-bleed-right .left-content {
@@ -7525,3 +7608,10 @@ footer {
     @media (min-width: 992px) {
       .section--photo-bleed-right .right-content {
         width: 50%; } }
+    @media (min-width: 1200px) {
+      .section--photo-bleed-right .right-content {
+        height: 500px; } }
+
+.resource {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #0071ce; }

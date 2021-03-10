@@ -9,12 +9,35 @@
     background-color: $brand-orange;
     border: none;
     &:hover,
-    &:active,
     &:focus,
-    &:visited,
-    &.focus,
-    &:not(:disabled):not(.disabled):active {
+    &.focus {
         background-color: darken($brand-orange, 10%);
+        border: none;
+        box-shadow: none !important;
+        outline: none;
+    }
+}
+
+.btn-secondary {
+    background-color: $brand-blue;
+    border: none;
+    &:hover,
+    &:focus,
+    &.focus {
+        background-color: darken($brand-blue, 5%);
+        border: none;
+        box-shadow: none !important;
+        outline: none;
+    }
+}
+
+.btn-dark {
+    background-color: $brand-dark-blue;
+    border: none;
+    &:hover,
+    &:focus,
+    &.focus {
+        background-color: darken($brand-dark-blue, 5%);
         border: none;
         box-shadow: none !important;
         outline: none;
