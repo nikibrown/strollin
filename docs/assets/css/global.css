@@ -7200,9 +7200,6 @@ a.text-dark:hover, a.text-dark:focus {
 .section--white {
   background-color: #fff; }
 
-.resource {
-  border-bottom: 1px solid #0071ce; }
-
 @media (min-width: 1200px) {
   .container,
   .container-sm,
